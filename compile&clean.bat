@@ -1,0 +1,17 @@
+xelatex report.tex /s
+xelatex report.tex /s
+del *.aux /s
+del *.bak /s
+del *.log /s
+del *.bbl /s
+del *.dvi /s
+del *.blg /s
+del *.thm /s
+del *.toc /s
+del *.out /s
+del *.nav /s
+del *.snm /s
+del *.gz /s
+del *.fls /s
+del *.xdv /s
+del *.fdb_latexmk /s

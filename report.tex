@@ -1,0 +1,102 @@
+\documentclass{SIAEInternshipReport}
+
+
+% ------------用户自定义命令方放置于此--------------------------
+
+
+\begin{document}
+
+% -------------------填写基本信息-------------------------------
+
+\internshiptype{\technical} % --> 实习类别，需要填写。 蓝领实习填写 \bluecollar ，技术实习填写 \technical ，专业实习填写 \pfe
+
+\internshiplocation{厦门航空有限公司} % --> 实习地点，填写
+
+\internshipstarttime{2018.07.09} % --> 实习开始时间，填写
+
+\internshipendtime{2018.08.05} % --> 实习结束时间，填写
+
+\author{肥雪} % --> 姓名，填写
+
+\studentid{146041212} % --> 学号，填写
+
+\currentyear{2018} % --> 报告撰写时间，年份，填写
+
+\currentmonth{9} % --> 报告撰写时间，月份，填写
+
+\title{ 题目（中文）} % --> 报告中文题目，填写
+
+\englishtitle{ TITLE(ENGLISH) } % --> 报告英文题目，填写
+
+\abstract{ % --> 中文摘要，填写
+    摘要用于对实习过程进行大致描述，包括实习单位、实习内容、个人收获等，对以技术性较强的部分，视其在实习中所占比例可给出进一步介绍。
+
+    摘要内容要求条理清晰、叙述简练，避免综述或介绍性质内容，着重围绕个人的实习过程进行介绍。使读者能够通过摘要了解实习大致过程。
+
+    摘要中所涉及的单位均为国际或行业标准单位，一般不应出现公式和图表。英文缩写、代号、简称等首次出现时应给出全称。
+
+    对于进行技术实习的同学，应突出描述实习过程中所从事的技术活动，包括：该项技术或方法的由来、作用、方案设计、实施过程、效果评估等。
+
+    字数：300-500
+}
+
+\keywords{ % --> 中文关键词，填写
+   3-5个
+}
+
+\englishabstract{ % --> 英文摘要，填写
+    英文摘要另起一页，与中文摘要对应。
+}
+
+\englishkeywords{ % --> 英文关键词，填写
+    (与上文之间空一行，内容应与中文“关键词”一致。词间用分号间隔，尾不加标点。)
+}
+
+
+
+
+
+%-------------------生成标题页和目录页---------------------------------------------
+
+\makecover[]
+
+\frontmatter
+
+
+\begin{spacing}{1.0}
+\tableofcontents
+\thispagestyle{empty}
+\end{spacing}
+
+\mainmatter
+
+\fancypagestyle{plain}{
+
+     \fancyhf{}
+     \lhead{}
+     \chead{ \zihao{5} 中国民航大学中欧航空工程师学院2018年技术实习报告 }
+     \cfoot{\thepage}
+     \renewcommand{\headrule}{\hrule width\headwidth}
+     \renewcommand{\headrulewidth}{0.4pt}
+
+}
+
+\setlength{\baselineskip}{20pt}
+
+
+
+% --------------------导入正文，根据个人需要自行调整-----------------------------------
+
+\include{body/chap1}
+\include{body/chap2}
+\include{body/chap3}
+\include{body/chap4}
+\include{body/chap5}
+\include{body/reference} % 参考文献
+\include{body/resume} % RESUME
+\include{body/acknowledgement} % 致谢
+\include{body/appendix} % 附录
+\include{body/attachment} % 附件
+
+
+\end{document}

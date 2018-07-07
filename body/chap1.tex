@@ -1,0 +1,68 @@
+\chapter{模板使用说明}
+
+\section{模板简介}
+
+本模板旨在为中欧学院同学提供一套标准规范的蓝领、技术、专业实习报告写作模板，减少同学们浪费在调整文献格式上的时间，故匆忙中制作了这套模板，模板按照《中欧航空工程师学院教学8号文件》附件1所述要求制作，符合其所述规范，同学们可使用本模板生成实习报告，可以摆脱word排版的诸多弊端，譬如不稳定，格式调整繁琐等问题，同时提供了更加简便的特殊文字符号插入能力和多种定制环境支持。
+
+\section{编译方法}
+
+由于本模板中文编码采用 \verb xeCJK 宏包 ，所以本模板必须使用 XeLaTeX 引擎编译。本模板是在 \verb texlive 下开发制作的，与其他的 \LaTeX 内核有所不同，故如果本模板在个人计算机上编译不通过，推荐安装 \verb texlive 。
+
+{\bfseries 如何采用 XeLaTeX 引擎编译？}
+\begin{itemize}
+    \item 方法一：在将本机 \verb texlive 添加到环境变量的前提下，双击本模板源文件根目录下的  \verb compile&clean.bat 文件实现编译，如果编译不通过，说明你所输入的源码存在语法或其他错误，请认真检查后调试至通过。
+
+    \item 方法二：使用本机自带 \LaTeX 编辑器，如 \verb SublimeText ，\verb texmaker 等，自行切换至 XeLaTeX 编译引擎即可。
+\end{itemize}
+
+
+\section{源文件结构}
+
+源文件根目录下包含三个文件夹及两个文档，对各个文件及文件夹的解释如下：
+
+\begin{itemize}
+    \item {\bfseries body}
+
+    存放文章的各个章节，在编译时将本部分的文件自动调入主文档。每一章节分开编写，在本部分中填写。文件夹中还包括参考文献、附录、致谢、法语总结和附件。
+
+    \item {\bfseries figure}
+
+    图片路径，所有图片存入本文件夹中，在使用时自动调入。
+
+    \item {\bfseries fonts}
+
+    存放应用的字体。
+
+    \item {\bfseries report.tex}
+
+    主文件，在编译时应该编译此文件。
+
+    \item {\bfseries SIAEInternshipReport.cls}
+
+    定制的实习报告文档类，包含文档基本设置以及封面设计等操作。
+
+\end{itemize}
+
+本模板源文件拓扑结构如图所示：
+
+\begin{Verbatim}[frame=single, framesep=5mm, samepage=false, baselinestretch=1.0]
+root --|body --|chap1.tex
+       |       |chap2.tex
+       |       |chap3.tex
+       |       |chap4.tex
+       |       |chap5.tex
+       |       |reference.tex (参考文献)
+       |       |acknowlegement.tex (致谢)
+       |       |appendix.tex (附录)
+       |       |resume.tex (法文摘要)
+       |       |attachement.tex (附件)
+       |
+       |figure (图片路径)
+       |
+       |fonts (字体)
+       |
+       |report.tex (主文件)
+       |
+       |SIAEInternshipReport.cls (定制文档类)
+\end{Verbatim}
+

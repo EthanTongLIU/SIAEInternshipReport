@@ -1,0 +1,197 @@
+\chapter{常见环境}
+
+以下所有示例的源码可以在对应的 \TeX 源文件中找到。
+
+\section{字号}
+
+    \begin{table}[H]
+    \centering
+    \topcaption{中文字号设置}
+    \label{tab:zihao-zh}
+    \begin{tabular}{lll}
+    \toprule
+    字号 & 命令 & 演示 \\
+    \midrule
+    初号 & \verb \zihao{0} & { \zihao{0} 初号 } \\
+    一号 & \verb \zihao{1} & { \zihao{1} 一号 } \\
+    小一 & \verb \zihao{-1} & { \zihao{-1} 小一 } \\
+    二号 & \verb \zihao{2} & { \zihao{2} 二号 } \\
+    小二 & \verb \zihao{-2} & { \zihao{-2} 小二 } \\
+    三号 & \verb \zihao{3} & { \zihao{3} 三号 } \\
+    小三 & \verb \zihao{-3} & { \zihao{-3} 小三 } \\
+    四号 & \verb \zihao{4} & { \zihao{4} 四号 } \\
+    小四 & \verb \zihao{-4} & { \zihao{-4} 小四 } \\
+    五号 & \verb \zihao{5} & { \zihao{5} 五号 } \\
+    小五 & \verb \zihao{-5} & { \zihao{-5} 小五 } \\
+    \bottomrule
+    \end{tabular}
+    \end{table}
+
+\section{字体}
+
+    本模板西文主字体被设置为 Times New Roman，中文主字体被设置为中易宋体。在使用过程中如果需要调入其他字体，模板中提供了如下几种基本字体，如果不能满足需要，请自行搜索添加字体的方法。
+
+    \subsection{中文字体}
+
+    \begin{table}[H]
+    \centering
+    \topcaption{中文字体}
+    \label{tab:font-zh}
+    \begin{tabular}{lll}
+    \toprule
+    字体 & 命令 & 演示 \\
+    \midrule
+    宋体 & \verb \songti & { \songti 宋体 } \\
+    黑体 & \verb \heiti & { \heiti 黑体 } \\
+    仿宋 & \verb \fangsong & { \fangsong 仿宋 } \\
+    隶书 & \verb \lishu & { \lishu 隶书 } \\
+    楷书 & \verb \kaishu & { \kaishu 楷书 } \\
+    \bottomrule
+    \end{tabular}
+    \end{table}
+
+    \subsection{西文字体}
+
+    \begin{table}[H]
+    \centering
+    \topcaption{西文字体}
+    \label{tab:font-en}
+    \begin{tabular}{lcr}
+    \toprule
+    字体 & 命令 & 演示 \\
+    \midrule
+    西文正体 &  & Times New Roman \\
+    西文斜体 & \verb \emph{} & \emph{Times New Roman} \\
+    \bottomrule
+    \end{tabular}
+    \end{table}
+
+\section{三线表}
+
+    \subsection{不指定行宽}
+
+    \begin{table}[H]
+    \centering
+    \topcaption{对比表}
+    \label{tab:tabsty-1}
+    \begin{tabular}{lll}
+    \toprule
+    项目一 & 项目二 & 项目三 \\
+    \midrule
+     值1 & 值1 & 值1 \\
+     值2 & 值2 & 值2 \\
+     值3 & 值3 & 值3 \\
+    \bottomrule
+    \end{tabular}
+    \end{table}
+
+    \subsection{指定行宽}
+
+    \begin{table}[H]
+    \centering
+    \topcaption{对比表}
+    \label{tab:tabsty-2}
+    \begin{tabular}{ p{2cm}<{\centering} p{2cm}<{\centering} p{2cm}<{\centering}  }
+    \toprule
+    项目一 & 项目二 & 项目三 \\
+    \midrule
+     值1 & 值1 & 值1 \\
+     值2 & 值2 & 值2 \\
+     值3 & 值3 & 值3 \\
+    \bottomrule
+    \end{tabular}
+    \end{table}
+
+    \subsection{调整表中字体大小}
+
+    \begin{table}[H]
+    \centering
+    \topcaption{对比表}
+    \label{tab:tabsty-3}
+    \small
+    \begin{tabular}{lcl}
+    \toprule
+    项目一 & 项目二 & 项目三 \\
+    \midrule
+     值1 & 值1 & 值1 \\
+     值2 & 值2 & 值2 \\
+     值3 & 值3 & 值3 \\
+    \bottomrule
+    \end{tabular}
+    \end{table}
+
+    \subsection{调整行高}
+
+    \renewcommand\arraystretch{2}
+    \begin{table}[H]
+    \centering
+    \topcaption{对比表}
+    \label{tab:tabsty-4}
+    \begin{tabular}{lcl}
+    \toprule
+    项目一 & 项目二 & 项目三 \\
+    \midrule
+     值1 & 值1 & 值1 \\
+     值2 & 值2 & 值2 \\
+     值3 & 值3 & 值3 \\
+    \bottomrule
+    \end{tabular}
+    \end{table}
+
+\section{插图}
+
+    \subsection{单张图片}
+
+     % 参数1为图片宽度，参数2为图片文件名，参数3位图片名称，参数4位该图片的引用标记
+    \FIG{8cm}{1.jpg}{发动机}{fig:1}
+
+    \subsection{并排图片}
+
+     % 参数1为图片1的宽度，参数2为图片1的文件名，参数3位图片1的名称，参数4为图片1的引用标记
+     % 参数5为图片2的宽度，参数6为图片5的文件名，参数7位图片2的名称，参数8位图片2的引用标记
+    \TWOFIG{7cm}{1.jpg}{发动机1}{fig:2.1}{7cm}{2.jpg}{发动机2}{fig:2.2}
+
+    \subsection{并排子图}
+
+    % 参数1为图片1的名称，参数2为图片1的宽度，参数3位图片1的文件名,
+    % 参数4为图片2的名称，参数2为图片5的宽度，参数6位图片2的文件名，
+    % 参数7为图片总名称，参数8位图片的引用标记
+    \SUBFIG{发动机1}{7cm}{1.jpg}{发动机2}{7cm}{2.jpg}{发动机}{fig:3}
+
+
+\section{参考文献}
+
+    例如，在 reference.tex 中的参考文献环境中有5条参考文献如下：
+
+    \begin{verbatim}
+    \bibitem{1} 薛华成.管理信息系统.北京:清华大学出版社,1993.
+    \bibitem{2} 杨庆,栾茂田等.边坡渐进破坏可靠性分析及其应用.第八届土力学及
+    岩土工程学术会议论文集.北京:万国学术出版社,1999.
+    \bibitem{3} 徐滨士,欧忠文等.纳米表面工程.中国机械工程，2000，
+    11（6）：707-712.
+    \bibitem{4} Kuehnlw M R, Peeken H, et al. The Toroidal Drive. Mechanical
+    Engineering, 1981, 103 (2):32-39.
+    \bibitem{5} 惠梦君,吴德海等.奥氏体—贝氏体球铁的发展.全国铸造学会奥氏体
+    —贝氏体球铁专业学术会议,武汉,1986:201-205.
+    \end{verbatim}
+
+    如果在正文中想要引用该条文献，命令如下：
+
+    \begin{verbatim}
+    \upcite{文献索引号(填写在 reference.tex 中的文献)}
+    \end{verbatim}
+
+    我们想引用文献1、2、3、5，所以这样填写：
+
+    \begin{verbatim}
+    \upcite{1,2,3,5}
+    \end{verbatim}
+
+    示例：{ \color{red}{ 管理信息系统的组成很复杂\upcite{1,2,3,5}。 }}
+
+\section{引用}
+
+引用命令为 \verb \ref{图或表的引用标记} ，示例如下：
+
+{\color{red}{ 如图\ref{fig:2.2}所示；如表\ref{tab:tabsty-1}所示。 }}
+
