@@ -1,0 +1,2 @@
+# SIAEInternshipReport
+中国民航大学中欧航空工程师学院蓝领/技术实习报告模板
