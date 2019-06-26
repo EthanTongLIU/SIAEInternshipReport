@@ -229,7 +229,7 @@
 
     { \zihao{1} \bfseries \@title }
     \\[5mm]
-    { \zihao{1} \CJKfontspec[Path=fonts/]{timesbd.ttf} \@english@title }
+    { \begin{spacing}{1.0} \zihao{1} \bfseries \@english@title \end{spacing} }
 
     \vspace*{75mm}
 
@@ -409,21 +409,32 @@
 
 
 
-
 %------------------页眉页脚-----------------------------------------
 
 \RequirePackage{fancyhdr}
 \RequirePackage{lastpage} % --> 获取总页数
 
-\pagestyle{fancy}
+\newcommand*\makeheaderandfooter[1][]{%
 
-\lhead{}
-\chead{ \zihao{5} 中国民航大学中欧航空工程师学院2018年技术实习报告 }
-\rhead{}
+    \pagestyle{fancy}
 
-\renewcommand{\headrule}{\hrule width\headwidth}
-\renewcommand{\headrulewidth}{0.4pt}
+    \lhead{}
+    \chead{ \zihao{5} 中国民航大学中欧航空工程师学院\@current@year 年\@internship@type 实习报告 }
+    \rhead{}
 
+    \renewcommand{\headrule}{\hrule width\headwidth}
+    \renewcommand{\headrulewidth}{0.4pt}
+
+    \fancypagestyle{plain}{
+        \fancyhf{}
+        \lhead{}
+        \chead{ \zihao{5} 中国民航大学中欧航空工程师学院\@current@year 年\@internship@type 实习报告 }
+        \cfoot{\thepage}
+        \renewcommand{\headrule}{\hrule width\headwidth}
+        \renewcommand{\headrulewidth}{0.4pt}
+    }
+
+}
 
 %-----------------重定义名称--------------------------------------
 
@@ -521,6 +532,10 @@
 
 %-----------重定义图表名称及格式-----------------------------------------
 
+\captionsetup[figure]{labelsep=space}
+\captionsetup[table]{labelsep=space}
 \renewcommand\contentsname{\zihao{3} \heiti \vspace*{-10mm} 目~~~~~~~~录  \vspace*{0mm}  }
-\renewcommand\tablename{\zihao{5} 表 }
-\renewcommand\figurename{\zihao{5} 图 }
+\renewcommand\tablename{\zihao{5}表}
+\renewcommand\figurename{\zihao{5}图}
+\renewcommand{\thefigure}{\thechapter-\arabic{figure}}
+\renewcommand{\thetable}{\thechapter-\arabic{table}}

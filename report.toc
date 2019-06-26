@@ -1,0 +1,30 @@
+\contentsline {chapter}{\numberline {1}模板使用说明}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}模板简介}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}编译方法}{1}{section.1.2}
+\contentsline {section}{\numberline {1.3}源文件结构}{1}{section.1.3}
+\contentsline {chapter}{\numberline {2}常见环境}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}字号}{3}{section.2.1}
+\contentsline {section}{\numberline {2.2}字体}{3}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}中文字体}{4}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}西文字体}{4}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.3}三线表}{4}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}不指定行宽}{4}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}指定行宽}{4}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}调整表中字体大小}{5}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}调整行高}{5}{subsection.2.3.4}
+\contentsline {section}{\numberline {2.4}插图}{5}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}单张图片}{5}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}并排图片}{6}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}并排子图}{6}{subsection.2.4.3}
+\contentsline {section}{\numberline {2.5}参考文献}{6}{section.2.5}
+\contentsline {section}{\numberline {2.6}引用}{7}{section.2.6}
+\contentsline {chapter}{\numberline {3}实习报告的结构}{8}{chapter.3}
+\contentsline {chapter}{\numberline {4}正文要求}{9}{chapter.4}
+\contentsline {chapter}{\numberline {5}规范表达注意事项}{10}{chapter.5}
+\contentsline {chapter}{\numberline {6}结论}{11}{chapter.6}
+\contentsline {chapter}{参考文献}{12}{chapter*.13}
+\contentsline {chapter}{RÉSUMÉ}{13}{chapter*.14}
+\contentsline {chapter}{致谢}{14}{chapter*.15}
+\contentsline {chapter}{附录A：蓝领实习周志}{15}{chapter*.16}
+\contentsline {chapter}{附录B：XXXXX}{16}{chapter*.17}
+\contentsfinish 
